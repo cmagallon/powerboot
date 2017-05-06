@@ -1,0 +1,45 @@
+.account {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .account-inner {
+    	padding: 20px;
+        .account-inner_list {
+        	display:flex;
+            .account-inner_list-item {
+            	margin: 20px;
+                width: 200px;
+                height: 200px;
+                border-radius: 100000000px;
+                border: 3px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 20px;
+                    margin-top: -20px;
+                    span {
+                        font-size: 60px;
+                    }
+                    div {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        small {
+                            font-size: 12px;
+                            padding-bottom: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

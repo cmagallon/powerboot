@@ -1,0 +1,215 @@
+@import url("http://fontawesome.io/assets/font-awesome/css/font-awesome.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+body {
+  font-family: 'Tahoma', sans-serif;
+  color: #616161;
+  background-color: #fa0e6a; }
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 960px; }
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px; }
+
+.header {
+  background-color: #616161;
+  color: white; }
+  .header .header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; }
+  .header .logo {
+    display: inline-block;
+    width: 220px; }
+    .header .logo img {
+      width: 100%; }
+  .header a {
+    color: white;
+    text-decoration: none; }
+  .header .header-menu {
+    display: flex;
+    align-items: center; }
+    .header .header-menu ul {
+      display: flex; }
+      .header .header-menu ul li {
+        border-right: 1px solid rgba(255, 255, 255, 0.2); }
+        .header .header-menu ul li a {
+          font-size: 16px;
+          display: flex;
+          padding: 0 25px;
+          flex-direction: column-reverse;
+          opacity: 0.8; }
+          .header .header-menu ul li a:hover {
+            opacity: 1; }
+          .header .header-menu ul li a small {
+            font-size: 10px;
+            padding-bottom: 2px; }
+        .header .header-menu ul li:last-child {
+          border-right: none; }
+        .header .header-menu ul li.header-menu_contact {
+          flex-direction: initial;
+          align-items: center; }
+          .header .header-menu ul li.header-menu_contact a {
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+          .header .header-menu ul li.header-menu_contact span {
+            width: 25px;
+            height: 25px;
+            border: 2px solid white;
+            border-radius: 1000000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 7px; }
+            .header .header-menu ul li.header-menu_contact span i {
+              font-size: 16px; }
+          .header .header-menu ul li.header-menu_contact div {
+            display: flex;
+            flex-direction: column-reverse; }
+
+input {
+  border: 2px solid #fa0e6a;
+  border-radius: 5px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  width: 100%; }
+
+.btn {
+  border: 0px;
+  color: white;
+  background-color: #0080C4;
+  box-shadow: 0 3px #01537f;
+  font-size: 15px;
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 5px;
+  width: 100%; }
+
+.none {
+  display: none; }
+
+.home .home-inner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .home .home-inner .logo {
+    margin-bottom: 20px;
+    width: 70%;
+    max-width: 244px; }
+    .home .home-inner .logo img {
+      width: 100%; }
+  .home .home-inner h2 {
+    margin-bottom: 20px; }
+  .home .home-inner form {
+    background-color: white;
+    padding: 40px;
+    max-width: 400px;
+    border-radius: 5px;
+    width: 70%; }
+    .home .home-inner form label {
+      display: block;
+      margin-bottom: 5px; }
+    .home .home-inner form .form-item {
+      margin-bottom: 20px; }
+      .home .home-inner form .form-item input {
+        box-sizing: border-box;
+        width: 100%; }
+      .home .home-inner form .form-item:last-child {
+        margin-bottom: 0px; }
+
+.account {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .account .account-inner {
+    padding: 20px; }
+    .account .account-inner .account-inner_list {
+      display: flex; }
+      .account .account-inner .account-inner_list .account-inner_list-item {
+        margin: 20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100000000px;
+        border: 3px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .account .account-inner .account-inner_list .account-inner_list-item a {
+          color: white;
+          text-decoration: none;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          font-size: 20px;
+          margin-top: -20px; }
+          .account .account-inner .account-inner_list .account-inner_list-item a span {
+            font-size: 60px; }
+          .account .account-inner .account-inner_list .account-inner_list-item a div {
+            display: flex;
+            flex-direction: column-reverse; }
+            .account .account-inner .account-inner_list .account-inner_list-item a div small {
+              font-size: 12px;
+              padding-bottom: 3px; }
+
+/*# sourceMappingURL=style.css.map */

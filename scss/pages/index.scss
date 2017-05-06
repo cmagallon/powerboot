@@ -1,0 +1,42 @@
+.home {
+    .home-inner {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .logo {
+            margin-bottom: 20px;
+            width: 70%;
+            max-width: 244px;
+            img{
+            	width:100%;
+            }
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: $color01;
+            padding: 40px;
+            max-width: 400px;
+            border-radius: 5px;
+            width: 70%;
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .form-item {
+                margin-bottom: 20px;
+                input {
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
