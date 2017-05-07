@@ -9,11 +9,121 @@
 </head>
 
 <body>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="account.html" class="logo">
+                <img src="img/powershoplogow.png" alt="">
+            </a>
+            <div class="header-menu">
+                <ul>
+                    <li>
+                        <a href="alarm.html">Alarm System<small>P&#363;naha Whakaoho</small></a>
+                    </li>
+                    <li>
+                        <a href="camera.html">Security Camera<small>K&#257;mera Haumarutanga</small></a>
+                    </li>
+                    <li>
+                        <a href="window.html">Window Locks<small>Raka Matapihi</small></a>
+                    </li>
+                    <li class="header-menu_contact">
+                        <a href="">
+                            <span>
+                                 <i class="fa fa-phone"></i>
+                            </span>
+                            <div>
+                                Contact Us<small>Whakap&#257; mai</small>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main class="window">
         <div class="window-inner">
-            
+            <ul class="window-inner_column">
+                <li class="window-inner_column-left">
+                    <ul class="window-inner_column-left_inner">
+                        <li class="window-inner_column-left_inner-row">
+                            <h6>Living Room Window 1</h6>
+                            <label class="switch">
+                                <input type="checkbox" id="Living1" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                        <li class="window-inner_column-left_inner-row">
+                            <h6>Living Room Window 2</h6>
+                            <label class="switch">
+                                <input type="checkbox" id="Living2" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                        <li class="window-inner_column-left_inner-row">
+                            <h6>Dinning Room Window </h6>
+                            <label class="switch">
+                                <input type="checkbox" id="Dinning" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                        <li class="window-inner_column-left_inner-row">
+                            <h6>Bathroom Window</h6>
+                            <label class="switch">
+                                <input type="checkbox" id="Bathroom" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="window-inner_column-right">
+                    <ul class="window-inner_column-right_inner">
+                        <li class="window-inner_column-right_inner-row">
+                            <h6>Window Bedroom 1</h6>
+                            <label class="switch">
+                                <input type="checkbox" id="Bedroom1" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                        <li class="window-inner_column-right_inner-row">
+                            <h6>Window Bedroom 2</h6>
+                            <label class="switch">
+                                <input type="checkbox" id="Bedroom2" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                        <li class="window-inner_column-right_inner-row">
+                            <h6>Window Bedroom 3</h6>
+                            <label class="switch">
+                                <input type="checkbox" id="Bedroom3" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                        <li class="window-inner_column-right_inner-row">
+                            <h6>Kitchen Window</h6>
+                            <label class="switch">
+                                <input type="checkbox" id="kitchen-window" class="toggleSwitch">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </main>
+    <script type="text/javascript">
+    if (localStorage.getItem("switches") !== null) {
+        var Storage = JSON.parse(localStorage.getItem("switches"));
+        for (var i = 0; i < Storage.length; i++) {
+            if (Storage[i]['active'] === 'true') {
+                var SwitchID = Storage[i]['switch'];
+                var SwitchExists = document.getElementById(SwitchID);
+                if (SwitchExists !== null) {
+                    SwitchExists.checked = true;
+                }
+            }
+        };
+    }
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
