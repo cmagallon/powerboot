@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Powershop Home Security</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
 </head>
 
-<body>
+<body class="page">
     <header class="header">
         <nav class="header-nav">
-            <a href="account.html" class="logo">
+            <a href="#" class="logo">
                 <img src="img/powershoplogow.png" alt="">
+            </a>
+            <a href="#" class="header-menu_hamburger">
+                <span>
+                    <i class="fa fa-bars"></i>
+                </span>
             </a>
             <div class="header-menu">
                 <ul>
@@ -41,21 +48,21 @@
     </header>
     <main class="camera">
         <div class="camera-inner">
-            <ul class="camera-inner_column">
-                <li class="camera-inner_column-left">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iBcjGrNhXYk" frameborder="0" allowfullscreen></iframe>
-                </li>
-                <li class="camera-inner_column-right">
-                    <ul class="camera-inner_column-right_inner">
-                        <li class="camera-inner_column-right_inner-row">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iBcjGrNhXYk" frameborder="0" allowfullscreen></iframe>
-                        </li>
-                        <li class="camera-inner_column-right_inner-row">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iBcjGrNhXYk" frameborder="0" allowfullscreen></iframe>
-                        </li>
-                    </ul>              
-                </li>
-            </ul>
+            <div class="camera-inner_column">
+                <div class="camera-inner_column_inner">
+                    <div class='embed-container embed-responsive-item'>
+                        <iframe src='https://www.youtube.com/embed/iBcjGrNhXYk' frameborder='0' allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="camera-inner_column_inner">
+                    <div class='embed-container embed-responsive-item'>
+                        <iframe src='https://www.youtube.com/embed/iBcjGrNhXYk' frameborder='0' allowfullscreen></iframe>
+                    </div>
+                    <div class='embed-container embed-responsive-item'>
+                        <iframe src='https://www.youtube.com/embed/iBcjGrNhXYk' frameborder='0' allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

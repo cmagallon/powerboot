@@ -7,20 +7,20 @@
     align-items: center;
     justify-content: center;
     .account-inner {
-    	padding: 20px;
+        padding: 20px;
         .account-inner_list {
-        	display:flex;
+            display: flex;
             .account-inner_list-item {
-            	margin: 20px;
+                margin: 20px;
                 width: 200px;
                 height: 200px;
                 border-radius: 100000000px;
-                border: 3px solid white;
+                border: 3px solid $color01;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 a {
-                    color: white;
+                    color: $color01;
                     text-decoration: none;
                     text-align: center;
                     display: flex;
@@ -42,4 +42,15 @@
             }
         }
     }
+    @media only screen and (max-width:$tablet) {
+        height: auto;
+        top: auto;
+        .account-inner_list {
+            flex-direction: column;
+        }
+    }
+}
+
+.header-menu li {
+    z-index: 1000000;
 }

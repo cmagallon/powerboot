@@ -1,18 +1,35 @@
 .alarm {
     display: flex;
     width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-    .alarm-inner_switch {
-        width: 500px;
-        height: 70px;
-        margin-bottom: 40px;
-        border-radius: 10px;
-        background-color: $color01;
-        border: 3px solid $color05;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    padding-top: 24vh;
+    .alarm-inner {
+        width: 100%;
+        max-width: 600px;
+        position: relative;
+        z-index: 2;
+        .alarm-inner_switch {
+            height: 70px;
+            margin: 40px;
+            border-radius: 10px;
+            background-color: $color01;
+            border: 3px solid $color05;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .alarm-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -36px;
+        left: 0;
+        background-image: url(img/house.png);
+        background-size: 440px;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        border-bottom: 36px solid #24255c;
     }
 }
