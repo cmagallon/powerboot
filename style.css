@@ -119,7 +119,8 @@ table {
               font-size: 16px; }
           .header .header-menu ul li.header-menu_contact div {
             display: flex;
-            flex-direction: column-reverse; }
+            flex-direction: column-reverse;
+            opacity: none; }
   @media only screen and (max-width: 960px) {
     .header .header-menu {
       display: block;
@@ -148,7 +149,7 @@ table {
     display: block; }
   body.open-sidebar .logo {
     position: relative;
-    left: -228px; }
+    left: 0px; }
   body.open-sidebar .header .header-menu {
     transform: translateX(0%); }
   body.open-sidebar .header .header-menu_hamburger {
@@ -157,6 +158,10 @@ table {
   body.open-sidebar .account {
     filter: grayscale(100%);
     transform: scale(1.2); } }
+
+@media only screen and (max-width: 550px) {
+  body.open-sidebar .logo {
+    width: 50px; } }
 
 html,
 body {
@@ -200,7 +205,7 @@ input {
   border: 0px;
   color: white;
   background-color: #0080C4;
-  box-shadow: 0 3px #01537f;
+  box-shadow: 0 3px #C6C6C6;
   font-size: 15px;
   margin-bottom: 0;
   display: inline-block;
@@ -230,7 +235,7 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #C6C6C6;
   -webkit-transition: .4s;
   transition: .4s;
   margin-right: 10px; }

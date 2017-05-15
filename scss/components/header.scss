@@ -63,6 +63,7 @@
                 }
                 &:last-child {
                     border-right: none;
+
                 }
                 &.header-menu_contact {
                     flex-direction: initial;
@@ -88,6 +89,7 @@
                     div {
                         display: flex;
                         flex-direction: column-reverse;
+                        opacity:none;
                     }
                 }
             }
@@ -135,7 +137,7 @@ body {
             }
             .logo {
                 position: relative;
-                left: -228px;
+                left: 0px;
             }
             .header {
                 .header-menu {
@@ -153,5 +155,14 @@ body {
 
             }
         }
+    }
+}
+body {
+    @media only screen and (max-width: $phone) {
+      &.open-sidebar{
+        .logo{
+            width:50px;
+        }
+      }  
     }
 }
